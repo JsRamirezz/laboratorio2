@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout con divs</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Eventos Click</h1>
+        <div class="row">
+            <div id="colorDeFondo" class="column">
+                <h3>Boton que cambia de color el fondo al hacer click</h3>
+                <button id="btnCambiarColor">Cambiar color de fondo</button>
+            </div>
+            <div id="warning" class="column">
+                <h3>Al hacer clic en este div se mostrara una alerta en el navegador </h3>
+            </div>
+            <div id="contador" class="column">
+                <h3>Este es un contador, al hacer clic en el boton se incrementa +1</h3>
+                <h3>Contador: <span id="contadorTexto">0</span></h3>
+                <button id="btnIncrementar">Incrementar</button>
+            </div>
+        </div>
+        <h1>Eventos Focus</h1>
+        <div class="row">
+            <div class="column">
+                <h3>Haz clic en el input para ver algo que antes no estaba</h3>
+                <input id="input" type="text" placeholder="Haz clic aquí para enfocar">
+                <p id="mensaje" style="display: none;">Estas enfocando el input</p>
+            </div>
+            <div class="column">
+                <h3>Haz clic en el input para ver como el interior cambiar de color</h3>
+                <input id="input2" type="text" placeholder="Haz clic aqui">
+            </div>
+            <div class="column">
+                <p id="parrafo" tabindex="0">Este texto cambiara su tamaño cuando hagas focus en el y volvera a su tamaño original 
+                    cuando hagas click en otra parte</p>
+            </div>
+        </div>
+        <h1>Eventos mouseover</h1>
+        <div class="row">
+            <div id="divOculto" class="column">
+                <p id="textoOculto">Este texto solo es visible cuando pasas el mouse por encima del div</p>
+            </div>
+            <div class="column">
+                <h2 id="textoColor">Este texto cambia de color cuando pasas el mouse por encima!</h2>
+            </div>
+            <div id="divPosicion" class="column">
+                <h3>Este boton cambia de posición cuando pasas el mouse sobre el</h3>
+                <button id="btnPosicion">Intenta hacer click!</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+
+</body>
+<footer>
+    José Angel Arias Ramírez - SMSS075220
+</footer>
+</html>
